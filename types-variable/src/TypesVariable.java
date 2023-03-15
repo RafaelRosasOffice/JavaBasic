@@ -22,9 +22,9 @@ public class TypesVariable {
      * Ex: final double VALOR_DE_PI = 3.14;
      */
 
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-    }
+    // public static void main(String[] args) throws Exception {
+    // System.out.println("Hello, World!");
+    // }
 
     // Estudo da class String
 
@@ -42,4 +42,33 @@ public class TypesVariable {
      * System.out.printf("tex1 = %s%ntex2 = %s%ntex3 = %s%n, tex1, tex2, tex3");
      * }
      */
+    // == vai comparar possição de memória
+    // equal vai comprar conteúdo do objeto
+
+    public static void main(String[] args) {
+        String nome1 = "codando simples";
+        String nome2 = new String("codando simples");
+
+        // nome1 = "nada"; // as strings são imutáveis
+        String nomeAlterado = nome1.toUpperCase();
+
+        System.out.println(nomeAlterado); // criando uma nova string eu consigo trabalhar uma outra, mas a string
+                                          // original nunca é alterada
+
+        // comparação de strings
+        if (nome1.equals(nome2)) {
+            System.out.println("são iguais");
+        } else {
+            System.out.println("são diferentes");
+        }
+
+        if (nome1 == nome2) {
+            System.out.println("são iguais");
+        } else {
+            System.out.println("são diferentes");
+        }
+        // toUpperCase - converte tudo para maiúsculo
+        // toLowerCase - converte tudo para minúsculo
+        // length - quantidade de caracteres na estrutura, os 'espaços' contam
+    }
 }
