@@ -67,8 +67,22 @@ public class TypesVariable {
         } else {
             System.out.println("são diferentes");
         }
+
+        var nome = "rafael ";
+        int number = 1;
+        System.out.println(nome + number);
         // toUpperCase - converte tudo para maiúsculo
         // toLowerCase - converte tudo para minúsculo
         // length - quantidade de caracteres na estrutura, os 'espaços' contam
+
+        // Rodando o programa pelo prompt de comando:
+
+        /*
+         * comando "cd C:" para entrar no diretório do programa java;
+         * comando "javac e nome do arquivo com extenção" para gerar um arquivo
+         * ".class";
+         * comando "java e nome do arquivo sem extenção" para rodar o programa.
+         * 
+         */
     }
 }
